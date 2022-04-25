@@ -6,7 +6,7 @@ class DetalleProducto extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Detalles'),
+      child: Text('Detalles de platillo'),
     );
   }
 }
