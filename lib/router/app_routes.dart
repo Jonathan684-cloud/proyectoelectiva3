@@ -64,8 +64,28 @@ class AppRouteSesion {
     MenuOption(
         route: 'promo',
         name: 'Promocion Dia',
-        screen: const PromoDiariaScreen(),
-        icon: Icons.food_bank_rounded)
+        screen: const PromoDiariaScreen(), //6
+        icon: Icons.food_bank_rounded),
+    MenuOption(
+        route: 'detalle',
+        name: 'Detalle Hamburguesa',
+        screen: const DetalleProducto(),
+        icon: Icons.format_overline_outlined),
+    MenuOption(
+        route: 'kids',
+        name: 'Combo Kids',
+        screen: const ComboKidsScreen(), //8
+        icon: Icons.format_overline_outlined),
+    MenuOption(
+        route: 'familia',
+        name: 'Combo Family',
+        screen: const ComboFamiliarScreen(), //9
+        icon: Icons.format_overline_outlined),
+    MenuOption(
+        route: 'crear',
+        name: 'Crear Burger',
+        screen: const CreateBurgerScreen(), //10
+        icon: Icons.format_overline_outlined),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

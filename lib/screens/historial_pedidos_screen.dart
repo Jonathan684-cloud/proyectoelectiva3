@@ -48,6 +48,7 @@ class _HistorialPedidosScreenState extends State<HistorialPedidosScreen> {
                         padding: const EdgeInsets.only(top: 15, bottom: 10),
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            //crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Icon(Icons.check_circle_outline,
                                   color: AppTheme.sevenly),

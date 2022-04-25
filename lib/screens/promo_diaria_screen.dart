@@ -9,7 +9,7 @@ class PromoDiariaScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Promo'),
+          title: const Text('Promocion Diaria'),
         ),
         body: SingleChildScrollView(
           child: Column(children: [
@@ -65,17 +65,3 @@ class PromoDiariaScreen extends StatelessWidget {
         ));
   }
 }
-/*
-child: Column(
-                children: const [
-                  SizedBox(
-                    height: 25,
-                  ),
-                  CardProducto(
-                    imageUrl: 'assets/logoo.png',
-                    textoBoton: 'Promocion diaria',
-                    alturaCard: 200,
-                  )
-                ],
-              )
-*/

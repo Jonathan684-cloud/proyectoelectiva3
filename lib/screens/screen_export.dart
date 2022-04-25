@@ -9,3 +9,4 @@ export 'package:burgerdelivery/screens/combo_fam_screen.dart';
 export 'package:burgerdelivery/screens/combo_kids_screen.dart';
 export 'package:burgerdelivery/screens/crear_burger_screen.dart';
 export 'package:burgerdelivery/screens/promo_diaria_screen.dart';
+export 'package:burgerdelivery/screens/detalle_producto.dart';

@@ -5,17 +5,21 @@ import '../router/app_routes.dart';
 
 class CardScreen extends StatelessWidget {
   final double alturaCard;
+  final int redireccion;
   final String textoBoton;
   final String imageUrl;
   const CardScreen(
       {Key? key,
       required this.imageUrl,
       required this.textoBoton,
-      required this.alturaCard})
+      required this.alturaCard,
+      required this.redireccion})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final menuOpciones = AppRouteSesion.menuOptions;
+
     return Card(
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(
@@ -44,7 +48,10 @@ class CardScreen extends StatelessWidget {
             ),
             Container(
               child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(
+                        context, menuOpciones[redireccion].route);
+                  },
                   child: Text(
                     textoBoton,
                     style: const TextStyle(
